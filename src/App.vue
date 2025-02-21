@@ -36,9 +36,13 @@
     </article>
     <article class="container">
       <div>LOVE STORY</div>
-      <video controls width="305">
-        <source src="./assets/wedding.mp4" type="video/mp4" />
-      </video>
+      <video
+        controls
+        width="305"
+        poster="./assets/video_thumbnail.png"
+        src="./assets/wedding.mp4"
+        type="video/mp4"
+      ></video>
     </article>
     <article class="container">
       <div>‘’Our Journey Begins Here’’</div>

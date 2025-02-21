@@ -2,7 +2,7 @@ export const en = {
   weddingOf: "THE WEDDING OF",
   bride: "Yosie Ananda P",
   brideFamily: "Daughter of Mr Priyo Purnomo &\n Mrs Siti Aminah",
-  groom: "Lee Eunsung",
+  groom: "Eunsung Lee",
   groomFamily: "Son of Mr Daesok Lee & Mrs Insook Jeong",
   invited: "Invited you to celebrate for our Wedding",
   weddingDate: "April 8, 2025",

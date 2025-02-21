@@ -72,28 +72,28 @@
         <div>토스뱅크</div>
         <div class="small">
           <div class="rowaic">
-            123456789
+            100123283236
             <button
               v-if="!done1"
               class="copy-btn"
-              @click="copyText('123456789', 1)"
+              @click="copyText('100123283236', 1)"
             >
               <img src="./assets/icons/icon-copy.png" alt="" />
             </button>
             <img v-else src="./assets/icons/check.png" alt="" class="inflex" />
           </div>
-          A. N Eunsung Lee
+          이은성
         </div>
       </section>
       <section class="sans-serif bank-card" style="margin-top: 10px">
         <div>BRI</div>
         <div class="small">
           <div class="rowaic">
-            123456789
+            622101033867530
             <button
               v-if="!done2"
               class="copy-btn"
-              @click="copyText('123456789', 2)"
+              @click="copyText('622101033867530', 2)"
             >
               <img src="./assets/icons/icon-copy.png" alt="" /></button
             ><img v-else src="./assets/icons/check.png" alt="" class="inflex" />

@@ -70,21 +70,34 @@
       <section class="sans-serif bank-card">
         <div>토스뱅크</div>
         <div class="small">
-          123456789
-          <button class="copy-btn">
-            <img src="./assets/icons/icon-copy.png" alt="" />
-          </button>
-          <br />A. N Eunsung Lee
+          <div class="rowaic">
+            123456789
+            <button
+              v-if="!done1"
+              class="copy-btn"
+              @click="copyText('123456789', 1)"
+            >
+              <img src="./assets/icons/icon-copy.png" alt="" />
+            </button>
+            <img v-else src="./assets/icons/check.png" alt="" class="inflex" />
+          </div>
+          A. N Eunsung Lee
         </div>
       </section>
       <section class="sans-serif bank-card" style="margin-top: 10px">
         <div>BRI</div>
         <div class="small">
-          123456789
-          <button class="copy-btn">
-            <img src="./assets/icons/icon-copy.png" alt="" />
-          </button>
-          <br />A. N Yosie Ananda Putri
+          <div class="rowaic">
+            123456789
+            <button
+              v-if="!done2"
+              class="copy-btn"
+              @click="copyText('123456789', 2)"
+            >
+              <img src="./assets/icons/icon-copy.png" alt="" /></button
+            ><img v-else src="./assets/icons/check.png" alt="" class="inflex" />
+          </div>
+          A. N Yosie Ananda Putri
         </div>
       </section>
     </article>
@@ -120,7 +133,20 @@ export default {
   data() {
     return {
       text: "",
+      done1: false,
+      done2: false,
     };
+  },
+  methods: {
+    copyText(text, num) {
+      window.navigator.clipboard.writeText(text).then(() => {
+        this[`done${num}`] = true;
+        setTimeout(() => {
+          this.done1 = false;
+          this.done2 = false;
+        }, 5000);
+      });
+    },
   },
   watch: {
     "$i18n.locale": (nv) => {

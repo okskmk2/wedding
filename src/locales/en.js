@@ -3,7 +3,7 @@ export const en = {
   bride: "Yosie Ananda P",
   brideFamily: "Daughter of Mr Priyo Purnomo & Mrs Siti Aminah",
   groom: "Lee Eunsung",
-  groomFamily: "Son of Mr Lee Daesok & Mrs In Sook",
+  groomFamily: "Son of Mr Daesok Lee & Mrs Insook Jeong",
   invited: "Invited you to celebrate for our Wedding",
   weddingDate: "April 8, 2025",
   weddingTime: "WEDDING TIME",
@@ -21,5 +21,4 @@ export const en = {
   wishesLabel: "Wishes / Message :",
   nameLabel: "Name :",
   sendButton: "SEND",
-  copyButton: "Copy",
 };

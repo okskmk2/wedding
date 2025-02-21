@@ -30,6 +30,10 @@ html[lang="ko"] .italic {
   margin: 16px 0;
 }
 
+html[lang="ko"] .keyword {
+  font-family: "Noto Serif KR", sans-serif;
+}
+
 body {
   margin: 2rem auto;
   max-width: 35rem;
@@ -77,6 +81,13 @@ article {
   background-color: transparent;
   border-style: none;
   padding: 1px;
+  display: inline-flex;
+}
+
+.inflex {
+  display: inline-flex;
+  width: 18px;
+  margin-left: 2px;
 }
 
 .square {
@@ -132,6 +143,12 @@ input {
   font-size: 15px;
   background-color: #f6f6f6;
   border-radius: 4px;
+}
+
+.rowaic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {

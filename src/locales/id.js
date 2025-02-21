@@ -3,7 +3,7 @@ export const id = {
   bride: "Yosie Ananda P",
   brideFamily: "Putri dari Bapak Priyo Purnomo & Ibu Siti Aminah",
   groom: "Lee Eunsung",
-  groomFamily: "Putra dari Bapak Lee Daesok & Ibu In Sook",
+  groomFamily: "Putra dari Bapak Daesok Lee & Ibu Insook Jeong",
   invited: "Mengundang Anda untuk merayakan Pernikahan kami",
   weddingDate: "08 . 04 . 2025",
   weddingTime: "WAKTU ACARA",
@@ -21,5 +21,4 @@ export const id = {
   wishesLabel: "Ucapan / Harapan :",
   nameLabel: "Nama :",
   sendButton: "KIRIM",
-  copyButton: "Salin",
 };

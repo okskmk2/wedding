@@ -16,7 +16,7 @@ export const id = {
   weddingLocationDetails: "WILTOP HOTEL JAMBI - INDONESIA\nSKY CAFE & BALCONY",
   weddingGift: "WEDDING GIFT",
   giftMessage:
-    "Kepada Bapak/Ibu/Saudara/i yang ingin \nberbagi kebahagiaan dengan kami, dapat\n mengirimkan hadiah pernikahan melalui\n rekening berikut:",
+    "Terima kasih yang sebesar-besarnya kepada mereka yang turut merayakan awal baru kami.",
   sendWishes: "UCAPAN / HARAPAN",
   wishesLabel: "Ucapan / Harapan :",
   nameLabel: "Nama :",

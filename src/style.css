@@ -44,11 +44,16 @@ body {
 
 html[lang="ko"] body {
   font-family: "Noto Serif KR", serif;
+  font-size: 16px;
 }
 
 article {
   margin: 0 auto 4rem;
   text-align: center;
+}
+
+.pre {
+  white-space: pre-line;
 }
 
 .top {
@@ -159,7 +164,7 @@ h2 {
 h3 {
   font-weight: 500;
   font-size: 18px;
-  margin: 0 0 20px;
+  margin: 0 0 8px;
 }
 
 .small {

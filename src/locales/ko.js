@@ -16,7 +16,7 @@ export const ko = {
   weddingLocationDetails: "WILTOP HOTEL JAMBI - INDONESIA\nSKY CAFE & BALCONY",
   weddingGift: "결혼 선물",
   giftMessage:
-    "저희의 새로운 시작을 함께 기뻐해 주시는 분들께 진심으로 감사드리며, 따뜻한 마음을 나누어 주시면 큰 힘이 될 것입니다.",
+    "저희의 새로운 시작을 함께 기뻐해 주시는 분들께 진심으로 감사드리며,\n 따뜻한 마음을 나누어 주시면 큰 힘이 될 것입니다.",
   sendWishes: "축하 메시지",
   wishesLabel: "축하 메시지 :",
   nameLabel: "이름 :",

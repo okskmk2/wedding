@@ -1,7 +1,7 @@
 export const en = {
   weddingOf: "THE WEDDING OF",
   bride: "Yosie Ananda P",
-  brideFamily: "Daughter of Mr Priyo Purnomo & Mrs Siti Aminah",
+  brideFamily: "Daughter of Mr Priyo Purnomo &\n Mrs Siti Aminah",
   groom: "Lee Eunsung",
   groomFamily: "Son of Mr Daesok Lee & Mrs Insook Jeong",
   invited: "Invited you to celebrate for our Wedding",
@@ -16,7 +16,7 @@ export const en = {
   weddingLocationDetails: "WILTOP HOTEL JAMBI - INDONESIA\nSKY CAFE & BALCONY",
   weddingGift: "WEDDING GIFT",
   giftMessage:
-    "To those who wish to share in our happiness, you may send wedding gifts through the following accounts:",
+    "To those who wish to share in our happiness,\n you may send wedding gifts\n through the following accounts:",
   sendWishes: "WISHES",
   wishesLabel: "Wishes / Message :",
   nameLabel: "Name :",

@@ -15,15 +15,16 @@
       <h2>{{ $t("weddingOf") }}</h2>
       <section>
         <div class="italic t-45">{{ $t("groom") }}</div>
-        <div>{{ $t("groomFamily") }}</div>
+        <div class="pre">{{ $t("groomFamily") }}</div>
       </section>
       <div class="italic t-45">&</div>
       <section>
         <div class="italic t-45">{{ $t("bride") }}</div>
-        <div>
+        <div class="pre">
           {{ $t("brideFamily") }}
         </div>
       </section>
+      <div class="space"></div>
       <section>
         <div>{{ $t("invited") }}</div>
         <div class="keyword">{{ $t("weddingDate") }}</div>
@@ -54,7 +55,7 @@
       <section>
         <h3>{{ $t("weddingLocation") }}</h3>
         <img src="./assets/middlephoto.png" alt="" />
-        <div class="small" style="margin-top: 8px">
+        <div class="small pre" style="margin-top: 8px">
           {{ $t("weddingLocationDetails") }}
         </div>
       </section>
@@ -63,7 +64,7 @@
     <article class="container">
       <img src="./assets/middle2.png" alt="" />
       <h2 class="medium">{{ $t("weddingGift") }}</h2>
-      <div>
+      <div class="pre">
         {{ $t("giftMessage") }}
       </div>
       <div class="space"></div>

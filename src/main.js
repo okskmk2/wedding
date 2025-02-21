@@ -1,5 +1,5 @@
-import { createApp } from "vue";
 import "./style.css";
+import { createApp } from "vue";
 import App from "./App.vue";
 import { fetchData } from "./firestore";
 import { createI18n } from "vue-i18n";

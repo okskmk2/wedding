@@ -12,30 +12,30 @@
       <img src="./assets/main.png" style="margin-top: -4rem" />
     </article>
     <article class="container">
-      <div class="t-20">THE WEDDING OF</div>
+      <h2>THE WEDDING OF</h2>
       <section>
-        <div>Lee Eunsung</div>
+        <div class="italic t-45">Lee Eunsung</div>
         <div>Son of Mr Lee Daesok & Mrs In Sook</div>
       </section>
-      <div>&</div>
+      <div class="italic t-45">&</div>
       <section>
-        <div>Yosie Ananda P</div>
+        <div class="italic t-45">Yosie Ananda P</div>
         <div>
           Daughter of Mr Priyo Purnomo &<br />
           Mrs Siti Aminah
         </div>
       </section>
+      <section>
+        <div>Invited you to celebrate for our Wedding</div>
+        <div class="keyword">08 . 04 . 2025</div>
+        <div>
+          Dengan penuh cinta dan syukur kami siap melangkah bersama dalam ikatan
+          pernikahan
+        </div>
+      </section>
     </article>
     <article class="container">
-      <div>Invited you to celebrate for our Wedding</div>
-      <div>08 . 04 . 2025</div>
-      <div>
-        Dengan penuh cinta dan syukur kami siap melangkah bersama dalam ikatan
-        pernikahan
-      </div>
-    </article>
-    <article class="container">
-      <div class="t-20">LOVE STORY</div>
+      <h2>LOVE STORY</h2>
       <video
         controls
         width="305"
@@ -45,58 +45,68 @@
       ></video>
     </article>
     <article class="container">
-      <div>"Our Journey Begins Here"</div>
-      <img src="./assets/middle.png" alt="" />
-      <div class="medium">WAKTU ACARA</div>
-      <div>15.30 - 17.00</div>
-      <div>Hadirmu melengkapi kebahagiaan kami</div>
+      <h2>"Our Journey Begins Here"</h2>
+      <section>
+        <img src="./assets/middle.png" alt="" />
+        <h3>WAKTU ACARA</h3>
+        <div class="keyword">15.30 - 17.00</div>
+        <div>Hadirmu melengkapi kebahagiaan kami</div>
+      </section>
+      <div class="space"></div>
+      <section>
+        <h3>LOKASI PERNIKAHAN</h3>
+        <img src="./assets/middlephoto.png" alt="" />
+        <div class="t-12">
+          WILTOP HOTEL JAMBI - INDONESIA<br />
+          SKY CAFE & BALCONY
+        </div>
+      </section>
     </article>
-    <article class="container">
-      <div>LOKASI PERNIKAHAN</div>
-      <img src="./assets/middlephoto.png" alt="" />
-      <div>WILTOP HOTEL JAMBI - INDONESIA</div>
-      <div>SKY CAFE & BALCONY</div>
-    </article>
+
     <article class="container">
       <img src="./assets/middle2.png" alt="" />
-      <div class="medium">WEDDING GIFT</div>
+      <h2 class="medium">WEDDING GIFT</h2>
       <div>
         Kepada Bapak/Ibu/Saudara/i yang ingin berbagi kebahagiaan dengan kami,
         dapat mengirimkan hadiah pernikahan melalui rekening berikut:
       </div>
+      <div class="space"></div>
       <section class="sans-serif bank-card">
         <div>BCA</div>
-        <div>
+        <div class="t-12">
           123456789
-          <button><img src="./assets/icons/icon-copy.png" alt="" /></button>
+          <button class="copy-btn">
+            <img src="./assets/icons/icon-copy.png" alt="" />
+          </button>
+          <br />A. N Eunsung Lee
         </div>
-        <div>A. N Eunsung Lee</div>
       </section>
       <section class="sans-serif bank-card" style="margin-top: 10px">
         <div>BRI</div>
-        <div>
+        <div class="t-12">
           123456789
-          <button><img src="./assets/icons/icon-copy.png" alt="" /></button>
+          <button class="copy-btn">
+            <img src="./assets/icons/icon-copy.png" alt="" />
+          </button>
+          <br />A. N Yosie Ananda Putri
         </div>
-        <div>A. N Yosie Ananda Putri</div>
       </section>
     </article>
     <article class="container">
-      <div class="medium">UCAPAN / HARAPAN</div>
-      <div>
-        <div>
+      <h3>UCAPAN / HARAPAN</h3>
+      <div class="square">
+        <div class="edit-top">
           <div>Ucapan / Harapan :</div>
           <div>500</div>
         </div>
-        <textarea name="" id=""></textarea>
+        <textarea></textarea>
       </div>
-      <div>
+      <div class="input-name-box square">
         <div>Nama :</div>
         <input type="text" />
       </div>
-      <div>
-        <button>KIRIM</button>
-      </div>
+      <button class="send-btn square">KIRIM</button>
     </article>
+    <div class="space"></div>
   </div>
 </template>

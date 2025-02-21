@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article>
+    <article style="margin-bottom: 2rem">
       <div class="top">
         <img src="./assets/lefttop.png" alt="" />
         <select v-model="$i18n.locale">
@@ -56,7 +56,7 @@
       <section>
         <h3>LOKASI PERNIKAHAN</h3>
         <img src="./assets/middlephoto.png" alt="" />
-        <div class="t-12">
+        <div class="small" style="margin-top: 8px">
           WILTOP HOTEL JAMBI - INDONESIA<br />
           SKY CAFE & BALCONY
         </div>
@@ -73,7 +73,7 @@
       <div class="space"></div>
       <section class="sans-serif bank-card">
         <div>BCA</div>
-        <div class="t-12">
+        <div class="small">
           123456789
           <button class="copy-btn">
             <img src="./assets/icons/icon-copy.png" alt="" />
@@ -83,7 +83,7 @@
       </section>
       <section class="sans-serif bank-card" style="margin-top: 10px">
         <div>BRI</div>
-        <div class="t-12">
+        <div class="small">
           123456789
           <button class="copy-btn">
             <img src="./assets/icons/icon-copy.png" alt="" />
@@ -97,9 +97,13 @@
       <div class="square">
         <div class="edit-top">
           <div>Ucapan / Harapan :</div>
-          <div>500</div>
+          <span
+            class="material-symbols-rounded heart"
+            :style="`color:rgb(${wordCount * 14},0, 0)`"
+            >favorite</span
+          >
         </div>
-        <textarea></textarea>
+        <textarea rows="3" v-model="text"></textarea>
       </div>
       <div class="input-name-box square">
         <div>Nama :</div>
@@ -110,3 +114,17 @@
     <div class="space"></div>
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    wordCount() {
+      return this.text.split(" ").length;
+    },
+  },
+  data() {
+    return {
+      text: "",
+    };
+  },
+};
+</script>

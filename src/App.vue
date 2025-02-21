@@ -12,7 +12,7 @@
       <img src="./assets/main.png" style="margin-top: -4rem" />
     </article>
     <article class="container">
-      <div>THE WEDDING OF</div>
+      <div class="t-20">THE WEDDING OF</div>
       <section>
         <div>Lee Eunsung</div>
         <div>Son of Mr Lee Daesok & Mrs In Sook</div>
@@ -35,7 +35,7 @@
       </div>
     </article>
     <article class="container">
-      <div>LOVE STORY</div>
+      <div class="t-20">LOVE STORY</div>
       <video
         controls
         width="305"
@@ -45,9 +45,9 @@
       ></video>
     </article>
     <article class="container">
-      <div>‘’Our Journey Begins Here’’</div>
+      <div>"Our Journey Begins Here"</div>
       <img src="./assets/middle.png" alt="" />
-      <div>WAKTU ACARA</div>
+      <div class="medium">WAKTU ACARA</div>
       <div>15.30 - 17.00</div>
       <div>Hadirmu melengkapi kebahagiaan kami</div>
     </article>
@@ -59,12 +59,12 @@
     </article>
     <article class="container">
       <img src="./assets/middle2.png" alt="" />
-      <div>WEDDING GIFT</div>
+      <div class="medium">WEDDING GIFT</div>
       <div>
         Kepada Bapak/Ibu/Saudara/i yang ingin berbagi kebahagiaan dengan kami,
         dapat mengirimkan hadiah pernikahan melalui rekening berikut:
       </div>
-      <section>
+      <section class="sans-serif bank-card">
         <div>BCA</div>
         <div>
           123456789
@@ -72,7 +72,7 @@
         </div>
         <div>A. N Eunsung Lee</div>
       </section>
-      <section>
+      <section class="sans-serif bank-card" style="margin-top: 10px">
         <div>BRI</div>
         <div>
           123456789
@@ -82,7 +82,7 @@
       </section>
     </article>
     <article class="container">
-      <div>UCAPAN / HARAPAN</div>
+      <div class="medium">UCAPAN / HARAPAN</div>
       <div>
         <div>
           <div>Ucapan / Harapan :</div>

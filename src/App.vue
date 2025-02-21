@@ -12,30 +12,28 @@
       <img src="./assets/main.png" style="margin-top: -4rem" />
     </article>
     <article class="container">
-      <h2>THE WEDDING OF</h2>
+      <h2>{{ $t("weddingOf") }}</h2>
       <section>
-        <div class="italic t-45">Lee Eunsung</div>
-        <div>Son of Mr Lee Daesok & Mrs In Sook</div>
+        <div class="italic t-45">{{ $t("groom") }}</div>
+        <div>{{ $t("groomFamily") }}</div>
       </section>
       <div class="italic t-45">&</div>
       <section>
-        <div class="italic t-45">Yosie Ananda P</div>
+        <div class="italic t-45">{{ $t("bride") }}</div>
         <div>
-          Daughter of Mr Priyo Purnomo &<br />
-          Mrs Siti Aminah
+          {{ $t("brideFamily") }}
         </div>
       </section>
       <section>
-        <div>Invited you to celebrate for our Wedding</div>
-        <div class="keyword">08 . 04 . 2025</div>
+        <div>{{ $t("invited") }}</div>
+        <div class="keyword">{{ $t("weddingDate") }}</div>
         <div>
-          Dengan penuh cinta dan syukur kami siap melangkah bersama dalam ikatan
-          pernikahan
+          {{ $t("weddingMessage") }}
         </div>
       </section>
     </article>
     <article class="container">
-      <h2>LOVE STORY</h2>
+      <h2>{{ $t("loveStory") }}</h2>
       <video
         controls
         width="305"
@@ -48,31 +46,29 @@
       <h2>"Our Journey Begins Here"</h2>
       <section>
         <img src="./assets/middle.png" alt="" />
-        <h3>WAKTU ACARA</h3>
-        <div class="keyword">15.30 - 17.00</div>
-        <div>Hadirmu melengkapi kebahagiaan kami</div>
+        <h3>{{ $t("weddingTime") }}</h3>
+        <div class="keyword">{{ $t("eventTime") }}</div>
+        <div>{{ $t("eventMessage") }}</div>
       </section>
       <div class="space"></div>
       <section>
-        <h3>LOKASI PERNIKAHAN</h3>
+        <h3>{{ $t("weddingLocation") }}</h3>
         <img src="./assets/middlephoto.png" alt="" />
         <div class="small" style="margin-top: 8px">
-          WILTOP HOTEL JAMBI - INDONESIA<br />
-          SKY CAFE & BALCONY
+          {{ $t("weddingLocationDetails") }}
         </div>
       </section>
     </article>
 
     <article class="container">
       <img src="./assets/middle2.png" alt="" />
-      <h2 class="medium">WEDDING GIFT</h2>
+      <h2 class="medium">{{ $t("weddingGift") }}</h2>
       <div>
-        Kepada Bapak/Ibu/Saudara/i yang ingin berbagi kebahagiaan dengan kami,
-        dapat mengirimkan hadiah pernikahan melalui rekening berikut:
+        {{ $t("giftMessage") }}
       </div>
       <div class="space"></div>
       <section class="sans-serif bank-card">
-        <div>BCA</div>
+        <div>토스뱅크</div>
         <div class="small">
           123456789
           <button class="copy-btn">
@@ -93,10 +89,10 @@
       </section>
     </article>
     <article class="container">
-      <h3>UCAPAN / HARAPAN</h3>
+      <h3>{{ $t("sendWishes") }}</h3>
       <div class="square">
         <div class="edit-top">
-          <div>Ucapan / Harapan :</div>
+          <div>{{ $t("wishesLabel") }}</div>
           <span
             class="material-symbols-rounded heart"
             :style="`color:rgb(${wordCount * 14},0, 0)`"
@@ -106,10 +102,10 @@
         <textarea rows="3" v-model="text"></textarea>
       </div>
       <div class="input-name-box square">
-        <div>Nama :</div>
+        <div>{{ $t("nameLabel") }}</div>
         <input type="text" />
       </div>
-      <button class="send-btn square">KIRIM</button>
+      <button class="send-btn square">{{ $t("sendButton") }}</button>
     </article>
     <div class="space"></div>
   </div>
@@ -125,6 +121,11 @@ export default {
     return {
       text: "",
     };
+  },
+  watch: {
+    "$i18n.locale": (nv) => {
+      document.documentElement.lang = nv;
+    },
   },
 };
 </script>

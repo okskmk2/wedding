@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Cormorant+Garamond:wght@400;500&family=Poppins:wght@400;500&family=Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400..500&family=Noto+Serif+KR:wght@400..500&family=Cormorant+Infant&family=Cormorant+Garamond:wght@400;500&family=Poppins:wght@400;500&family=Pinyon+Script&display=swap");
 
 html {
   background-color: #eee;
@@ -12,8 +12,16 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+html[lang="ko"] .sans-serif {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 .italic {
   font-family: "Pinyon Script";
+}
+
+html[lang="ko"] .italic {
+  font-family: "Noto Serif KR", sans-serif;
 }
 
 .keyword {
@@ -28,6 +36,10 @@ body {
   background-color: white;
   font-family: "Cormorant Garamond", serif;
   font-size: 17px;
+}
+
+html[lang="ko"] body {
+  font-family: "Noto Serif KR", serif;
 }
 
 article {

@@ -8,7 +8,7 @@ export const ko = {
   weddingDate: "2025년 4월 8일",
   weddingTime: "결혼식 시간",
   weddingMessage:
-    "사랑과 감사의 마음으로 저희는 결혼이라는 새로운 시작을 함께 합니다",
+    "사랑과 감사의 마음으로\n 결혼이라는 새로운 시작을 함께 합니다",
   loveStory: "사랑 이야기",
   eventTime: "오후 3시 30분 ~ 5시",
   eventMessage: "여러분의 참석이 저희의 행복을 완성합니다.",

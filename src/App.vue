@@ -28,7 +28,7 @@
       <section>
         <div>{{ $t("invited") }}</div>
         <div class="keyword">{{ $t("weddingDate") }}</div>
-        <div>
+        <div class="pre">
           {{ $t("weddingMessage") }}
         </div>
       </section>
@@ -36,6 +36,8 @@
     <article class="container">
       <h2>{{ $t("loveStory") }}</h2>
       <video
+        muted
+        autoplay
         controls
         width="305"
         poster="./assets/video_thumbnail.png"

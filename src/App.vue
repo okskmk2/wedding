@@ -36,11 +36,8 @@
     <article class="container">
       <h2>{{ $t("loveStory") }}</h2>
       <video
-        loop
-        muted
-        autoplay
         controls
-        width="305"
+        width="320"
         poster="./assets/video_thumbnail.png"
         src="./assets/wedding.mp4"
         type="video/mp4"

@@ -36,6 +36,7 @@
     <article class="container">
       <h2>{{ $t("loveStory") }}</h2>
       <video
+        loop
         muted
         autoplay
         controls

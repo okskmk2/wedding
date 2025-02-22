@@ -21,4 +21,6 @@ export const id = {
   wishesLabel: "Ucapan / Harapan :",
   nameLabel: "Nama :",
   sendButton: "KIRIM",
+  sendComplete: "Pengiriman berhasil.",
+  nameContentRequired: "Harap isi nama dan pesan Anda dengan lengkap.",
 };

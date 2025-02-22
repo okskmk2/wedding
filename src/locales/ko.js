@@ -21,4 +21,6 @@ export const ko = {
   wishesLabel: "축하 메시지 :",
   nameLabel: "이름 :",
   sendButton: "보내기",
+  sendComplete: "전송이 완료되었습니다.",
+  nameContentRequired: "이름과 내용을 모두 적어주세요.",
 };

@@ -21,4 +21,6 @@ export const en = {
   wishesLabel: "Wishes / Message :",
   nameLabel: "Name :",
   sendButton: "SEND",
+  sendComplete: "The submission has been completed.",
+  nameContentRequired: "Please fill in both your name and message completely.",
 };

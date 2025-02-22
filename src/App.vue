@@ -116,15 +116,20 @@
         <textarea rows="3" v-model="text"></textarea>
       </div>
       <div class="input-name-box square">
-        <div>{{ $t("nameLabel") }}</div>
-        <input type="text" />
+        <label for="guest_name">{{ $t("nameLabel") }}</label>
+        <input id="guest_name" type="text" v-model="guestName" />
       </div>
-      <button class="send-btn square">{{ $t("sendButton") }}</button>
+      <button class="send-btn square" @click="addPost">
+        {{ $t("sendButton") }}
+      </button>
     </article>
     <div class="space"></div>
   </div>
 </template>
 <script>
+import { getVisitorInfo } from "./actions";
+import { addData } from "./firestore";
+
 export default {
   computed: {
     wordCount() {
@@ -136,6 +141,7 @@ export default {
       text: "",
       done1: false,
       done2: false,
+      guestName: "",
     };
   },
   methods: {
@@ -148,6 +154,26 @@ export default {
         }, 5000);
       });
     },
+    addPost() {
+      // console.log(this.wordCount);
+      if (this.text.trim() && this.guestName.trim()) {
+        addData("posts", {
+          text: this.text,
+          name: this.guestName,
+        }).then(() => {
+          alert(this.$t("sendComplete"));
+          this.text = "";
+          this.guestName = "";
+        });
+      } else {
+        alert(this.$t("nameContentRequired"));
+      }
+    },
+  },
+  created() {
+    getVisitorInfo().then((data) => {
+      addData("visitors", data);
+    });
   },
   watch: {
     "$i18n.locale": (nv) => {

@@ -70,6 +70,7 @@
       <div class="space"></div>
       <div class="bankaccounts">
         <section class="sans-serif bank-card">
+          <span class="role" style="background-color: #99e2ff">신랑</span>
           이은성
           <div>토스뱅크</div>
           <div class="small">
@@ -92,7 +93,7 @@
           </div>
         </section>
         <section class="sans-serif bank-card">
-          이대석
+          <span class="role">신랑의 아버지</span> 이대석
           <div>우리은행</div>
           <div class="small">
             <div class="rowaic">
@@ -114,7 +115,7 @@
           </div>
         </section>
         <section class="sans-serif bank-card">
-          정인숙
+          <span class="role">신랑의 어머니</span> 정인숙
           <div>토스뱅크</div>
           <div class="small">
             <div class="rowaic">
@@ -136,7 +137,8 @@
           </div>
         </section>
         <section class="sans-serif bank-card">
-          A. N Yosie Ananda Putri
+          <span class="role" style="background-color: #ff99b9">신부</span> Yosie
+          Ananda Putri
           <div>BRI</div>
           <div class="small">
             <div class="rowaic">

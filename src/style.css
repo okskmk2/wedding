@@ -157,6 +157,13 @@ input {
   border-radius: 4px;
 }
 
+.role {
+  padding: 1px 4px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
 .rowaic {
   display: flex;
   align-items: center;

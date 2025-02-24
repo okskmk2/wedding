@@ -68,39 +68,95 @@
         {{ $t("giftMessage") }}
       </div>
       <div class="space"></div>
-      <section class="sans-serif bank-card">
-        <div>토스뱅크</div>
-        <div class="small">
-          <div class="rowaic">
-            100123283236
-            <button
-              v-if="!done1"
-              class="copy-btn"
-              @click="copyText('100123283236', 1)"
-            >
-              <img src="./assets/icons/icon-copy.png" alt="" />
-            </button>
-            <img v-else src="./assets/icons/check.png" alt="" class="inflex" />
-          </div>
+      <div class="bankaccounts">
+        <section class="sans-serif bank-card">
           이은성
-        </div>
-      </section>
-      <section class="sans-serif bank-card" style="margin-top: 10px">
-        <div>BRI</div>
-        <div class="small">
-          <div class="rowaic">
-            622101033867530
-            <button
-              v-if="!done2"
-              class="copy-btn"
-              @click="copyText('622101033867530', 2)"
-            >
-              <img src="./assets/icons/icon-copy.png" alt="" /></button
-            ><img v-else src="./assets/icons/check.png" alt="" class="inflex" />
+          <div>토스뱅크</div>
+          <div class="small">
+            <div class="rowaic">
+              1001 2328 3236
+              <button
+                v-if="!done1"
+                class="copy-btn"
+                @click="copyText('100123283236', 1)"
+              >
+                <img src="./assets/icons/icon-copy.png" alt="" />
+              </button>
+              <img
+                v-else
+                src="./assets/icons/check.png"
+                alt=""
+                class="inflex"
+              />
+            </div>
           </div>
+        </section>
+        <section class="sans-serif bank-card">
+          이대석
+          <div>우리은행</div>
+          <div class="small">
+            <div class="rowaic">
+              1005 8021 22976
+              <button
+                v-if="!done2"
+                class="copy-btn"
+                @click="copyText('1005802122976', 2)"
+              >
+                <img src="./assets/icons/icon-copy.png" alt="" />
+              </button>
+              <img
+                v-else
+                src="./assets/icons/check.png"
+                alt=""
+                class="inflex"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="sans-serif bank-card">
+          정인숙
+          <div>토스뱅크</div>
+          <div class="small">
+            <div class="rowaic">
+              1001 2613 5096
+              <button
+                v-if="!done3"
+                class="copy-btn"
+                @click="copyText('100126135096', 3)"
+              >
+                <img src="./assets/icons/icon-copy.png" alt="" />
+              </button>
+              <img
+                v-else
+                src="./assets/icons/check.png"
+                alt=""
+                class="inflex"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="sans-serif bank-card">
           A. N Yosie Ananda Putri
-        </div>
-      </section>
+          <div>BRI</div>
+          <div class="small">
+            <div class="rowaic">
+              62210 10338 67530
+              <button
+                v-if="!done4"
+                class="copy-btn"
+                @click="copyText('622101033867530', 4)"
+              >
+                <img src="./assets/icons/icon-copy.png" alt="" /></button
+              ><img
+                v-else
+                src="./assets/icons/check.png"
+                alt=""
+                class="inflex"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
     </article>
     <article class="container">
       <h3>{{ $t("sendWishes") }}</h3>
@@ -141,6 +197,8 @@ export default {
       text: "",
       done1: false,
       done2: false,
+      done3: false,
+      done4: false,
       guestName: "",
     };
   },
@@ -151,6 +209,8 @@ export default {
         setTimeout(() => {
           this.done1 = false;
           this.done2 = false;
+          this.done3 = false;
+          this.done4 = false;
         }, 5000);
       });
     },

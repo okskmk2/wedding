@@ -2,6 +2,8 @@ export const ko = {
   weddingOf: "THE WEDDING OF",
   bride: "요시 아난다 P",
   brideFamily: "프리요 푸르노모와 시티 아미나의 딸",
+  groom_self: "신랑",
+  bride_self: "신부",
   groom: "이은성",
   groomFamily: "이대석과 정인숙의 아들",
   invited: "우리의 결혼식을 함께 축하해 주세요",

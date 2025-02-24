@@ -2,6 +2,8 @@ export const en = {
   weddingOf: "THE WEDDING OF",
   bride: "Yosie Ananda P",
   brideFamily: "Daughter of Mr Priyo Purnomo &\n Mrs Siti Aminah",
+  groom_self: "groom",
+  bride_self: "bride",
   groom: "Eunsung Lee",
   groomFamily: "Son of Mr Daesok Lee &\n Mrs Insook Jeong",
   invited: "Invited you to celebrate for our Wedding",

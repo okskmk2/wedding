@@ -162,6 +162,8 @@ input {
   font-size: 14px;
   border-radius: 4px;
   background-color: #eee;
+  font-weight: 500;
+  margin-right: 2px;
 }
 
 .family {
@@ -169,6 +171,22 @@ input {
   color: #555;
   margin-bottom: 8px;
   white-space: pre-line;
+}
+
+.bank-row {
+  margin-top: 4px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.bank-row button .bank-row .inflex {
+  margin-left: 4px;
+}
+
+.bank-name {
+  font-weight: 500;
+  margin-right: 6px;
 }
 
 .rowaic {

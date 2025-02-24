@@ -15,12 +15,12 @@
       <h2>{{ $t("weddingOf") }}</h2>
       <section>
         <div class="italic t-45">{{ $t("groom") }}</div>
-        <div class="pre">{{ $t("groomFamily") }}</div>
+        <div class="pre" style="color: #555">{{ $t("groomFamily") }}</div>
       </section>
       <div class="italic t-45">&</div>
       <section>
         <div class="italic t-45">{{ $t("bride") }}</div>
-        <div class="pre">
+        <div class="pre" style="color: #555">
           {{ $t("brideFamily") }}
         </div>
       </section>
@@ -71,49 +71,39 @@
       <div class="bankaccounts">
         <section class="sans-serif bank-card">
           <div class="family">{{ $t("groomFamily") }}</div>
-          <span class="role" style="background-color: #99e2ff">신랑</span>
-          이은성
-          <div>토스뱅크</div>
-          <div class="small">
-            <div class="rowaic">
-              1001 2328 3236
-              <button
-                v-if="!done1"
-                class="copy-btn"
-                @click="copyText('100123283236', 1)"
-              >
-                <img src="./assets/icons/icon-copy.png" alt="" />
-              </button>
-              <img
-                v-else
-                src="./assets/icons/check.png"
-                alt=""
-                class="inflex"
-              />
-            </div>
+          <span class="role" style="background-color: #99e2ff">{{
+            $t("groom_self")
+          }}</span>
+          {{ $t("groom") }}
+          <div class="small bank-row">
+            <span class="bank-name">토스뱅크</span>
+            1001 2328 3236
+            <button
+              v-if="!done1"
+              class="copy-btn"
+              @click="copyText('100123283236', 1)"
+            >
+              <img src="./assets/icons/icon-copy.png" alt="" />
+            </button>
+            <img v-else src="./assets/icons/check.png" alt="" class="inflex" />
           </div>
         </section>
         <section class="sans-serif bank-card">
           <div class="family">{{ $t("brideFamily") }}</div>
-          <span class="role" style="background-color: #ff99b9">신부</span> Yosie
-          Ananda Putri
-          <div>BRI</div>
-          <div class="small">
-            <div class="rowaic">
-              62210 10338 67530
-              <button
-                v-if="!done4"
-                class="copy-btn"
-                @click="copyText('622101033867530', 4)"
-              >
-                <img src="./assets/icons/icon-copy.png" alt="" /></button
-              ><img
-                v-else
-                src="./assets/icons/check.png"
-                alt=""
-                class="inflex"
-              />
-            </div>
+          <span class="role" style="background-color: #ff99b9">{{
+            $t("bride_self")
+          }}</span>
+          {{ $t("bride") }}
+          <div class="small bank-row">
+            <span class="bank-name">BRI</span>
+            62210 10338 67530
+            <button
+              v-if="!done4"
+              class="copy-btn"
+              @click="copyText('622101033867530', 4)"
+            >
+              <img src="./assets/icons/icon-copy.png" alt="" /></button
+            ><img v-else src="./assets/icons/check.png" alt="" class="inflex" />
           </div>
         </section>
       </div>

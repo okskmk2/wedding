@@ -3,7 +3,7 @@ export const id = {
   bride: "Yosie Ananda P",
   brideFamily: "Putri dari Bapak Priyo Purnomo &\n Ibu Siti Aminah",
   groom: "Lee Eunsung",
-  groomFamily: "Putra dari Bapak Daesok Lee & Ibu Insook Jeong",
+  groomFamily: "Putra dari Bapak Daesok Lee &\n Ibu Insook Jeong",
   invited: "Invited you to celebrate for our Wedding",
   weddingDate: "08 . 04 . 2025",
   weddingTime: "WAKTU ACARA",

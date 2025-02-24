@@ -70,6 +70,7 @@
       <div class="space"></div>
       <div class="bankaccounts">
         <section class="sans-serif bank-card">
+          <div class="family">{{ $t("groomFamily") }}</div>
           <span class="role" style="background-color: #99e2ff">신랑</span>
           이은성
           <div>토스뱅크</div>
@@ -93,50 +94,7 @@
           </div>
         </section>
         <section class="sans-serif bank-card">
-          <span class="role">신랑의 아버지</span> 이대석
-          <div>우리은행</div>
-          <div class="small">
-            <div class="rowaic">
-              1005 8021 22976
-              <button
-                v-if="!done2"
-                class="copy-btn"
-                @click="copyText('1005802122976', 2)"
-              >
-                <img src="./assets/icons/icon-copy.png" alt="" />
-              </button>
-              <img
-                v-else
-                src="./assets/icons/check.png"
-                alt=""
-                class="inflex"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="sans-serif bank-card">
-          <span class="role">신랑의 어머니</span> 정인숙
-          <div>토스뱅크</div>
-          <div class="small">
-            <div class="rowaic">
-              1001 2613 5096
-              <button
-                v-if="!done3"
-                class="copy-btn"
-                @click="copyText('100126135096', 3)"
-              >
-                <img src="./assets/icons/icon-copy.png" alt="" />
-              </button>
-              <img
-                v-else
-                src="./assets/icons/check.png"
-                alt=""
-                class="inflex"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="sans-serif bank-card">
+          <div class="family">{{ $t("brideFamily") }}</div>
           <span class="role" style="background-color: #ff99b9">신부</span> Yosie
           Ananda Putri
           <div>BRI</div>

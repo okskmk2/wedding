@@ -158,10 +158,16 @@ input {
 }
 
 .role {
-  padding: 1px 4px;
+  padding: 1px 5px;
   font-size: 14px;
   border-radius: 4px;
   background-color: #eee;
+}
+
+.family {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
 }
 
 .rowaic {

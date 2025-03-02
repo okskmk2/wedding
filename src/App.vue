@@ -33,7 +33,7 @@
         </div>
       </section>
     </article>
-    <article class="container">
+    <article class="container" v-if="isOpenVideo">
       <h2>{{ $t("loveStory") }}</h2>
       <video
         controls
@@ -150,6 +150,7 @@ export default {
       done3: false,
       done4: false,
       guestName: "",
+      isOpenVideo: false,
     };
   },
   methods: {
@@ -184,6 +185,9 @@ export default {
     getVisitorInfo().then((data) => {
       addData("visitors", data);
     });
+    let params = new URL(document.location).searchParams;
+    let name = params.get("video");
+    this.isOpenVideo = Boolean(name);
   },
   watch: {
     "$i18n.locale": (nv) => {

@@ -35,13 +35,8 @@
     </article>
     <article class="container" v-if="isOpenVideo">
       <h2>{{ $t("loveStory") }}</h2>
-      <video
-        controls
-        width="320"
-        poster="./assets/video_thumbnail.png"
-        src="./assets/wedding.mp4"
-        type="video/mp4"
-      ></video>
+      <video controls width="320" poster="./assets/video_thumbnail.png" src="./assets/wedding.mp4"
+        type="video/mp4"></video>
     </article>
     <article class="container">
       <h2>"Our Journey Begins Here"</h2>
@@ -73,16 +68,12 @@
           <div class="family">{{ $t("groomFamily") }}</div>
           <span class="role" style="background-color: #99e2ff">{{
             $t("groom_self")
-          }}</span>
+            }}</span>
           {{ $t("groom") }}
-          <div class="small bank-row">
+          <div class=" bank-row">
             <span class="bank-name">토스뱅크</span>
             1001 2328 3236
-            <button
-              v-if="!done1"
-              class="copy-btn"
-              @click="copyText('100123283236', 1)"
-            >
+            <button v-if="!done1" class="copy-btn" @click="copyText('100123283236', 1)">
               <img src="./assets/icons/icon-copy.png" alt="" />
             </button>
             <img v-else src="./assets/icons/check.png" alt="" class="inflex" />
@@ -92,18 +83,14 @@
           <div class="family">{{ $t("brideFamily") }}</div>
           <span class="role" style="background-color: #ff99b9">{{
             $t("bride_self")
-          }}</span>
+            }}</span>
           {{ $t("bride") }}
-          <div class="small bank-row">
+          <div class=" bank-row">
             <span class="bank-name">BRI</span>
             62210 10338 67530
-            <button
-              v-if="!done4"
-              class="copy-btn"
-              @click="copyText('622101033867530', 4)"
-            >
-              <img src="./assets/icons/icon-copy.png" alt="" /></button
-            ><img v-else src="./assets/icons/check.png" alt="" class="inflex" />
+            <button v-if="!done4" class="copy-btn" @click="copyText('622101033867530', 4)">
+              <img src="./assets/icons/icon-copy.png" alt="" /></button><img v-else src="./assets/icons/check.png"
+              alt="" class="inflex" />
           </div>
         </section>
       </div>
@@ -113,11 +100,7 @@
       <div class="square">
         <div class="edit-top">
           <div>{{ $t("wishesLabel") }}</div>
-          <span
-            class="material-symbols-rounded heart"
-            :style="`color:rgb(${wordCount * 14},0, 0)`"
-            >favorite</span
-          >
+          <span class="material-symbols-rounded heart" :style="`color:rgb(${wordCount * 14},0, 0)`">favorite</span>
         </div>
         <textarea rows="3" v-model="text"></textarea>
       </div>

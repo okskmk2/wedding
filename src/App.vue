@@ -35,8 +35,13 @@
     </article>
     <article class="container" v-if="isOpenVideo">
       <h2>{{ $t("loveStory") }}</h2>
-      <video controls width="320" poster="./assets/video_thumbnail.png" src="./assets/wedding.mp4"
-        type="video/mp4"></video>
+      <video
+        controls
+        width="320"
+        poster="./assets/video_thumbnail.png"
+        src="./assets/wedding.mp4"
+        type="video/mp4"
+      ></video>
     </article>
     <article class="container">
       <h2>"Our Journey Begins Here"</h2>
@@ -68,12 +73,16 @@
           <div class="family">{{ $t("groomFamily") }}</div>
           <span class="role" style="background-color: #99e2ff">{{
             $t("groom_self")
-            }}</span>
+          }}</span>
           {{ $t("groom") }}
-          <div class=" bank-row">
+          <div class="bank-row">
             <span class="bank-name">토스뱅크</span>
             1001 2328 3236
-            <button v-if="!done1" class="copy-btn" @click="copyText('100123283236', 1)">
+            <button
+              v-if="!done1"
+              class="copy-btn"
+              @click="copyText('100123283236', 1)"
+            >
               <img src="./assets/icons/icon-copy.png" alt="" />
             </button>
             <img v-else src="./assets/icons/check.png" alt="" class="inflex" />
@@ -83,14 +92,18 @@
           <div class="family">{{ $t("brideFamily") }}</div>
           <span class="role" style="background-color: #ff99b9">{{
             $t("bride_self")
-            }}</span>
+          }}</span>
           {{ $t("bride") }}
-          <div class=" bank-row">
+          <div class="bank-row">
             <span class="bank-name">BRI</span>
             62210 10338 67530
-            <button v-if="!done4" class="copy-btn" @click="copyText('622101033867530', 4)">
-              <img src="./assets/icons/icon-copy.png" alt="" /></button><img v-else src="./assets/icons/check.png"
-              alt="" class="inflex" />
+            <button
+              v-if="!done4"
+              class="copy-btn"
+              @click="copyText('622101033867530', 4)"
+            >
+              <img src="./assets/icons/icon-copy.png" alt="" /></button
+            ><img v-else src="./assets/icons/check.png" alt="" class="inflex" />
           </div>
         </section>
       </div>
@@ -100,7 +113,11 @@
       <div class="square">
         <div class="edit-top">
           <div>{{ $t("wishesLabel") }}</div>
-          <span class="material-symbols-rounded heart" :style="`color:rgb(${wordCount * 14},0, 0)`">favorite</span>
+          <span
+            class="material-symbols-rounded heart"
+            :style="`color:rgb(${wordCount * 14},0, 0)`"
+            >favorite</span
+          >
         </div>
         <textarea rows="3" v-model="text"></textarea>
       </div>
@@ -112,12 +129,24 @@
         {{ $t("sendButton") }}
       </button>
     </article>
+    <article class="container" v-if="posts.length > 0">
+      <h3>Posts</h3>
+      <div v-for="post in posts" class="post-card">
+        <div style="display: flex; justify-content: space-between">
+          <div class="post-name">{{ post.name }}</div>
+          <div style="font-size: 13px; color: #555">
+            {{ new Date(post.timestamp.seconds * 1000).toLocaleString() }}
+          </div>
+        </div>
+        <div class="post-text">{{ post.text }}</div>
+      </div>
+    </article>
     <div class="space"></div>
   </div>
 </template>
 <script>
 import { getVisitorInfo } from "./actions";
-import { addData } from "./firestore";
+import { addData, fetchData } from "./firestore";
 
 export default {
   computed: {
@@ -134,6 +163,7 @@ export default {
       done4: false,
       guestName: "",
       isOpenVideo: false,
+      posts: [],
     };
   },
   methods: {
@@ -163,14 +193,24 @@ export default {
         alert(this.$t("nameContentRequired"));
       }
     },
+    getPosts() {
+      fetchData("posts").then((res) => {
+        console.log(res);
+        this.posts = res;
+      });
+    },
   },
   created() {
     getVisitorInfo().then((data) => {
       addData("visitors", data);
     });
     let params = new URL(document.location).searchParams;
-    let name = params.get("video");
-    this.isOpenVideo = Boolean(name);
+    let q_video = params.get("video");
+    let q_posts = params.get("posts");
+    if (Boolean(q_posts)) {
+      this.getPosts();
+    }
+    this.isOpenVideo = Boolean(q_video);
   },
   watch: {
     "$i18n.locale": (nv) => {

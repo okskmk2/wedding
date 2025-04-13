@@ -74,7 +74,7 @@ article {
 }
 
 .container {
-  width: 325px;
+  /* width: 325px; */
   padding: 0 1rem;
 }
 
@@ -228,6 +228,18 @@ html[lang="ko"] .t-45 {
 
 .heart {
   font-size: 18px;
+}
+
+.post-card {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-name {
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 50rem) {

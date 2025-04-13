@@ -7,10 +7,6 @@ import { ko } from "./locales/ko";
 import { en } from "./locales/en";
 import { id } from "./locales/id";
 
-fetchData("posts").then((res) => {
-  console.log(res);
-});
-
 const initLocale = navigator.language.substring(0, 2);
 
 document.documentElement.lang = initLocale;
